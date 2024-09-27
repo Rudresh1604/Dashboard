@@ -20,6 +20,7 @@ const config: Config = {
         lamaPurpleLight: "#F1F0FF",
         lamaYellow: "#FAE27C",
         lamaYellowLight: "#FEFCE8",
+        lamaBlue: "#001F3F",
       },
     },
   },

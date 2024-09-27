@@ -118,6 +118,15 @@ const Register: React.FC = () => {
               />
             </div>
           </Form.Item>
+          <Form.Item
+            name="role"
+            label="Role"
+            rules={[{ required: true, message: "Please input your role!" }]}
+          >
+            <div className="flex relative">
+              <Input type="text" placeholder="Enter your role" />
+            </div>
+          </Form.Item>
           <div className="flex justify-end w-full pt-8">
             <Button
               onClick={registerWithGoogle}
