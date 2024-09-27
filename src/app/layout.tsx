@@ -6,8 +6,8 @@ import { GoogleOAuthProvider } from "@react-oauth/google"; // Import GoogleOAuth
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mentor Connect",
-  description: "Next.js School Management System",
+  title: "Campus Board",
+  description: "School Management System",
 };
 
 const clientId =

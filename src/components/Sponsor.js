@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../components/Footer";
-import Link from "next/link";
 
 function Sponsors() {
   return (
@@ -77,9 +76,7 @@ function Sponsors() {
           </div>
         </div>
       </div>
-      <button>
-        <Link></Link>
-      </button>
+
       <Footer />
     </div>
   );
