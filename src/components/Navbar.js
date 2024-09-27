@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const user = props?.user;
   return (
     <div className="flex items-center justify-between p-4">
       {/* SEARCH BAR */}

@@ -14,23 +14,23 @@ import {
 const data = [
   {
     name: "Mon",
-    request: 60,
-    completed: 20,
+    present: 60,
+    absent: 20,
   },
   {
     name: "Tue",
-    request: 50,
-    completed: 30,
+    present: 50,
+    absent: 30,
   },
   {
     name: "Wed",
-    request: 60,
-    completed: 30,
+    present: 60,
+    absent: 30,
   },
   {
     name: "Thu",
-    request: 40,
-    completed: 30,
+    present: 40,
+    absent: 30,
   },
   {
     name: "Fri",
@@ -43,7 +43,7 @@ const AttendanceChart = () => {
   return (
     <div className="bg-white rounded-lg p-4 h-full">
       <div className="flex justify-between items-center">
-        <h1 className="text-lg font-semibold">Meetings</h1>
+        <h1 className="text-lg font-semibold">Attendace</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
       </div>
       <ResponsiveContainer width="100%" height="90%">
@@ -65,13 +65,13 @@ const AttendanceChart = () => {
             wrapperStyle={{ paddingTop: "20px", paddingBottom: "40px" }}
           />
           <Bar
-            dataKey="request"
+            dataKey="present"
             fill="#FAE27C"
             legendType="circle"
             radius={[10, 10, 0, 0]}
           />
           <Bar
-            dataKey="completed"
+            dataKey="absent"
             fill="#C3EBFA"
             legendType="circle"
             radius={[10, 10, 0, 0]}

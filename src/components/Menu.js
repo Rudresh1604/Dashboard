@@ -1,6 +1,6 @@
-import { role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const menuItems = [
   {
@@ -73,12 +73,7 @@ const menuItems = [
         href: "/list/events",
         visible: ["admin", "teacher", "student", "parent"],
       },
-      {
-        icon: "/message.png",
-        label: "Messages",
-        href: "/list/messages",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
+
       {
         icon: "/announcement.png",
         label: "Announcements",
@@ -112,7 +107,9 @@ const menuItems = [
   },
 ];
 
-const Menu = () => {
+const Menu = (props) => {
+  console.log(props?.user?.role);
+  const role = props?.user?.role;
   return (
     <div className="mt-4 text-sm">
       {menuItems.map((i) => (
